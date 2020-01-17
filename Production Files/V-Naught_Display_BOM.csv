@@ -1,0 +1,13 @@
+Comment,Designator,Footprint, LCSC
+4.7uF,"C1,C2",Capacitor_SMD:C_0805_2012Metric,C1779
+0.1uF,"C4,C3",Capacitor_SMD:C_0805_2012Metric,C49678
+MountingHole,"H1,H2,H3,H4",MountingHole:MountingHole_3.2mm_M3,
+USB_B_Micro,J1,Connector_USB:USB_Micro-B_Molex-105017-0001,
+I2C Header,J2,TRA_KiCad_Footprints:1pt3in_OLED,
+Conn_01x03,J3,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,
+Conn_01x02,J4,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,
+10K,"R2,R1,R3",Resistor_SMD:R_0805_2012Metric,C17414
+SW_SPST,"SW1,SW2,SW3,SW4",Button_Switch_THT:SW_PUSH_6mm_H9.5mm,
+SW_SPST,SW5,Button_Switch_THT:SW_PUSH_6mm,
+AP2127K-3.3,U1,Package_TO_SOT_SMD:SOT-23-5,C156285
+STM32F042F6Px,U2,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,C81000
