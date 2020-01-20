@@ -662,4 +662,139 @@ F 3 "~" H 4150 1200 50  0001 C CNN
 	1    4150 1200
 	1    0    0    1   
 $EndComp
+Text GLabel 1950 5250 0    50   Input ~ 0
+Kill_Switch
+$Comp
+L power:GND #PWR0120
+U 1 1 5E225054
+P 2650 5350
+F 0 "#PWR0120" H 2650 5100 50  0001 C CNN
+F 1 "GND" H 2655 5177 50  0000 C CNN
+F 2 "" H 2650 5350 50  0001 C CNN
+F 3 "" H 2650 5350 50  0001 C CNN
+	1    2650 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5350 2650 5250
+Wire Wire Line
+	2650 5250 2550 5250
+Wire Wire Line
+	2150 5250 1950 5250
+Text GLabel 2300 3650 2    50   Input ~ 0
+Kill_Switch
+$Comp
+L 74xGxx:74LVC1G17 U3
+U 1 1 5E22767C
+P 1800 6300
+F 0 "U3" H 1775 6567 50  0000 C CNN
+F 1 "74LVC1G17" H 1775 6476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1800 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1800 6300 50  0001 C CNN
+	1    1800 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 5950 1    50   Input ~ 0
+VBUS
+$Comp
+L LED:WS2812B D1
+U 1 1 5E22982F
+P 2500 6300
+F 0 "D1" H 2844 6346 50  0000 L CNN
+F 1 "WS2812B" H 2844 6255 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2550 6000 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2600 5925 50  0001 L TNN
+	1    2500 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6000 2500 5950
+Wire Wire Line
+	2500 5950 1800 5950
+Wire Wire Line
+	1800 5950 1800 6200
+Wire Wire Line
+	1800 6400 1800 6650
+Wire Wire Line
+	1800 6650 2150 6650
+Wire Wire Line
+	2500 6650 2500 6600
+Wire Wire Line
+	2200 6300 2050 6300
+$Comp
+L power:GND #PWR0121
+U 1 1 5E23384D
+P 2150 6650
+F 0 "#PWR0121" H 2150 6400 50  0001 C CNN
+F 1 "GND" H 2155 6477 50  0000 C CNN
+F 2 "" H 2150 6650 50  0001 C CNN
+F 3 "" H 2150 6650 50  0001 C CNN
+	1    2150 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 6300 0    50   Input ~ 0
+NeoPixel
+Text GLabel 2300 3150 2    50   Input ~ 0
+NeoPixel
+Connection ~ 2150 6650
+Wire Wire Line
+	2150 6650 2500 6650
+$Comp
+L Device:Rotary_Encoder_Switch SW7
+U 1 1 5E23C835
+P 6250 3800
+F 0 "SW7" H 6250 4167 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 6250 4076 50  0000 C CNN
+F 2 "TRA_KiCad_Footprints:EN11 Encoder" H 6100 3960 50  0001 C CNN
+F 3 "~" H 6250 4060 50  0001 C CNN
+	1    6250 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 3700 2    50   Input ~ 0
+Button_Up
+Text GLabel 5950 3900 0    50   Input ~ 0
+Button_Down
+Text GLabel 5950 3700 0    50   Input ~ 0
+Button_Left
+$Comp
+L power:GND #PWR0122
+U 1 1 5E2449F3
+P 6650 4000
+F 0 "#PWR0122" H 6650 3750 50  0001 C CNN
+F 1 "GND" H 6655 3827 50  0000 C CNN
+F 2 "" H 6650 4000 50  0001 C CNN
+F 3 "" H 6650 4000 50  0001 C CNN
+	1    6650 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4000 6650 3900
+Wire Wire Line
+	6650 3900 6550 3900
+Wire Wire Line
+	5950 3800 5300 3800
+Wire Wire Line
+	5300 3800 5300 3700
+$Comp
+L power:+3V3 #PWR0123
+U 1 1 5E248221
+P 5300 3700
+F 0 "#PWR0123" H 5300 3550 50  0001 C CNN
+F 1 "+3V3" H 5315 3873 50  0000 C CNN
+F 2 "" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5E24B6BA
+P 2350 5250
+F 0 "SW6" H 2350 5485 50  0000 C CNN
+F 1 "SW_SPST" H 2350 5394 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2350 5250 50  0001 C CNN
+F 3 "~" H 2350 5250 50  0001 C CNN
+	1    2350 5250
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
