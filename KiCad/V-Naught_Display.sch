@@ -112,7 +112,7 @@ F 3 "" H 1300 2300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 1100 3150 0    50   Input ~ 0
-Reset
+~Reset
 Text GLabel 1100 3850 0    50   Input ~ 0
 SDA
 Text GLabel 1100 3950 0    50   Input ~ 0
@@ -595,60 +595,56 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 5E2313D9
-P 5400 1350
-F 0 "J3" H 5480 1392 50  0000 L CNN
-F 1 "Conn_01x03" H 5480 1301 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5400 1350 50  0001 C CNN
-F 3 "~" H 5400 1350 50  0001 C CNN
-	1    5400 1350
+P 6150 1350
+F 0 "J3" H 6230 1392 50  0000 L CNN
+F 1 "Conn_01x03" H 6230 1301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6150 1350 50  0001 C CNN
+F 3 "~" H 6150 1350 50  0001 C CNN
+	1    6150 1350
 	1    0    0    -1  
 $EndComp
 Text GLabel 2300 4150 2    50   Input ~ 0
 SWDIO
 Text GLabel 2300 4250 2    50   Input ~ 0
 SWDCLK
-Text GLabel 4850 1250 0    50   Input ~ 0
+Text GLabel 5600 1250 0    50   Input ~ 0
 SWDIO
-Text GLabel 4850 1350 0    50   Input ~ 0
+Text GLabel 5600 1350 0    50   Input ~ 0
 SWDCLK
-Text GLabel 3900 2450 2    50   Input ~ 0
-Reset
-Text GLabel 4850 1450 0    50   Input ~ 0
-Reset
 Wire Wire Line
-	5200 1450 4850 1450
+	5950 1450 5600 1450
 Wire Wire Line
-	4850 1350 5050 1350
+	5600 1350 5800 1350
 Wire Wire Line
-	5200 1250 4850 1250
+	5950 1250 5600 1250
 Wire Wire Line
-	5050 1350 5050 1150
-Connection ~ 5050 1350
+	5800 1350 5800 1150
+Connection ~ 5800 1350
 Wire Wire Line
-	5050 1350 5200 1350
+	5800 1350 5950 1350
 $Comp
 L Device:R R3
 U 1 1 5E2437B3
-P 5050 1000
-F 0 "R3" H 5120 1046 50  0000 L CNN
-F 1 "10K" H 5120 955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4980 1000 50  0001 C CNN
-F 3 "~" H 5050 1000 50  0001 C CNN
-F 4 "C17414" H 5050 1000 50  0001 C CNN "LCSC"
-	1    5050 1000
+P 5800 1000
+F 0 "R3" H 5870 1046 50  0000 L CNN
+F 1 "10K" H 5870 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 1000 50  0001 C CNN
+F 3 "~" H 5800 1000 50  0001 C CNN
+F 4 "C17414" H 5800 1000 50  0001 C CNN "LCSC"
+	1    5800 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 850  5050 750 
+	5800 850  5800 750 
 $Comp
 L power:+3V3 #PWR0119
 U 1 1 5E2437BA
-P 5050 750
-F 0 "#PWR0119" H 5050 600 50  0001 C CNN
-F 1 "+3V3" H 5065 923 50  0000 C CNN
-F 2 "" H 5050 750 50  0001 C CNN
-F 3 "" H 5050 750 50  0001 C CNN
-	1    5050 750 
+P 5800 750
+F 0 "#PWR0119" H 5800 600 50  0001 C CNN
+F 1 "+3V3" H 5815 923 50  0000 C CNN
+F 2 "" H 5800 750 50  0001 C CNN
+F 3 "" H 5800 750 50  0001 C CNN
+	1    5800 750 
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -656,7 +652,7 @@ L Connector_Generic:Conn_01x04 J2
 U 1 1 5E219662
 P 4150 1200
 F 0 "J2" H 4068 775 50  0000 C CNN
-F 1 "I2C Header" H 4068 866 50  0000 C CNN
+F 1 "I2C Header 1" H 4068 866 50  0000 C CNN
 F 2 "TRA_KiCad_Footprints:1pt3in_OLED" H 4150 1200 50  0001 C CNN
 F 3 "~" H 4150 1200 50  0001 C CNN
 	1    4150 1200
@@ -691,6 +687,7 @@ F 0 "U3" H 1775 6567 50  0000 C CNN
 F 1 "74LVC1G17" H 1775 6476 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1800 6300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1800 6300 50  0001 C CNN
+F 4 "C124293" H 1800 6300 50  0001 C CNN "LCSC"
 	1    1800 6300
 	1    0    0    -1  
 $EndComp
@@ -797,4 +794,115 @@ F 3 "~" H 2350 5250 50  0001 C CNN
 	1    2350 5250
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J5
+U 1 1 5E2B51F8
+P 4500 6000
+F 0 "J5" H 4550 6417 50  0000 C CNN
+F 1 "SWD Header" H 4550 6326 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4500 6000 50  0001 C CNN
+F 3 "~" H 4500 6000 50  0001 C CNN
+	1    4500 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5900 4100 5900
+Wire Wire Line
+	4100 5900 4100 6000
+Wire Wire Line
+	4300 6000 4100 6000
+Connection ~ 4100 6000
+Wire Wire Line
+	4100 6000 4100 6200
+Wire Wire Line
+	4300 5800 4100 5800
+Wire Wire Line
+	4100 5800 4100 5650
+$Comp
+L power:GND #PWR0124
+U 1 1 5E2BBF7F
+P 4100 6200
+F 0 "#PWR0124" H 4100 5950 50  0001 C CNN
+F 1 "GND" H 4105 6027 50  0000 C CNN
+F 2 "" H 4100 6200 50  0001 C CNN
+F 3 "" H 4100 6200 50  0001 C CNN
+	1    4100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0125
+U 1 1 5E2BDDEA
+P 4100 5650
+F 0 "#PWR0125" H 4100 5500 50  0001 C CNN
+F 1 "+3V3" H 4115 5823 50  0000 C CNN
+F 2 "" H 4100 5650 50  0001 C CNN
+F 3 "" H 4100 5650 50  0001 C CNN
+	1    4100 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 4900 5800 2    50   Input ~ 0
+SWDIO
+Text GLabel 4900 5900 2    50   Input ~ 0
+SWDCLK
+Text GLabel 3900 2450 2    50   Input ~ 0
+~Reset
+Text GLabel 5600 1450 0    50   Input ~ 0
+~Reset
+Text GLabel 4900 6200 2    50   Input ~ 0
+~Reset
+Wire Wire Line
+	4900 5800 4800 5800
+Wire Wire Line
+	4800 5900 4900 5900
+Wire Wire Line
+	4900 6200 4800 6200
+NoConn ~ 4800 6100
+NoConn ~ 4800 6000
+NoConn ~ 4300 6100
+NoConn ~ 4300 6200
+$Comp
+L power:+3V3 #PWR0126
+U 1 1 5E2ECBBA
+P 4500 950
+F 0 "#PWR0126" H 4500 800 50  0001 C CNN
+F 1 "+3V3" H 4515 1123 50  0000 C CNN
+F 2 "" H 4500 950 50  0001 C CNN
+F 3 "" H 4500 950 50  0001 C CNN
+	1    4500 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5E2ECBC0
+P 4600 1400
+F 0 "#PWR0127" H 4600 1150 50  0001 C CNN
+F 1 "GND" H 4605 1227 50  0000 C CNN
+F 2 "" H 4600 1400 50  0001 C CNN
+F 3 "" H 4600 1400 50  0001 C CNN
+	1    4600 1400
+	1    0    0    -1  
+$EndComp
+Text GLabel 4750 1000 0    50   Input ~ 0
+SDA
+Text GLabel 4750 1100 0    50   Input ~ 0
+SCL
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 5E2ECBCC
+P 4950 1200
+F 0 "J6" H 4868 775 50  0000 C CNN
+F 1 "I2C Header 2" H 4868 866 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4950 1200 50  0001 C CNN
+F 3 "~" H 4950 1200 50  0001 C CNN
+	1    4950 1200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4750 1300 4500 1300
+Wire Wire Line
+	4500 950  4500 1300
+Wire Wire Line
+	4750 1200 4600 1200
+Wire Wire Line
+	4600 1200 4600 1400
 $EndSCHEMATC
