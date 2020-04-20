@@ -14,131 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F0:STM32F042F6Px U2
-U 1 1 5E2111EE
-P 1700 3650
-F 0 "U2" H 1900 2750 50  0000 C CNN
-F 1 "STM32F042F6Px" H 1900 2900 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1200 2950 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 1700 3650 50  0001 C CNN
-F 4 "C81000" H 1700 3650 50  0001 C CNN "LCSC"
-	1    1700 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5E212434
-P 1800 2550
-F 0 "C4" H 1915 2596 50  0000 L CNN
-F 1 "0.1uF" H 1915 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1838 2400 50  0001 C CNN
-F 3 "~" H 1800 2550 50  0001 C CNN
-F 4 "C49678" H 1800 2550 50  0001 C CNN "LCSC"
-	1    1800 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1600 2950 1600 2350
-Wire Wire Line
-	1600 2350 1800 2350
-Wire Wire Line
-	1800 2350 1800 2400
-Wire Wire Line
-	1800 2350 1800 2300
-Connection ~ 1800 2350
-$Comp
-L power:GND #PWR0101
-U 1 1 5E21452E
-P 1800 2700
-F 0 "#PWR0101" H 1800 2450 50  0001 C CNN
-F 1 "GND" H 1805 2527 50  0000 C CNN
-F 2 "" H 1800 2700 50  0001 C CNN
-F 3 "" H 1800 2700 50  0001 C CNN
-	1    1800 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0102
-U 1 1 5E214E5E
-P 1800 2300
-F 0 "#PWR0102" H 1800 2150 50  0001 C CNN
-F 1 "+3V3" H 1815 2473 50  0000 C CNN
-F 2 "" H 1800 2300 50  0001 C CNN
-F 3 "" H 1800 2300 50  0001 C CNN
-	1    1800 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5E217BAD
-P 1300 2550
-F 0 "C3" H 1186 2504 50  0000 R CNN
-F 1 "0.1uF" H 1186 2595 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1338 2400 50  0001 C CNN
-F 3 "~" H 1300 2550 50  0001 C CNN
-F 4 "C49678" H 1300 2550 50  0001 C CNN "LCSC"
-	1    1300 2550
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1500 2950 1500 2350
-Wire Wire Line
-	1500 2350 1300 2350
-Wire Wire Line
-	1300 2350 1300 2400
-Wire Wire Line
-	1300 2350 1300 2300
-Connection ~ 1300 2350
-$Comp
-L power:GND #PWR0103
-U 1 1 5E217BB8
-P 1300 2700
-F 0 "#PWR0103" H 1300 2450 50  0001 C CNN
-F 1 "GND" H 1305 2527 50  0000 C CNN
-F 2 "" H 1300 2700 50  0001 C CNN
-F 3 "" H 1300 2700 50  0001 C CNN
-	1    1300 2700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0104
-U 1 1 5E217BBE
-P 1300 2300
-F 0 "#PWR0104" H 1300 2150 50  0001 C CNN
-F 1 "+3V3" H 1315 2473 50  0000 C CNN
-F 2 "" H 1300 2300 50  0001 C CNN
-F 3 "" H 1300 2300 50  0001 C CNN
-	1    1300 2300
-	-1   0    0    -1  
-$EndComp
-Text GLabel 1100 3150 0    50   Input ~ 0
-~Reset
-Text GLabel 1100 3850 0    50   Input ~ 0
-SDA
-Text GLabel 1100 3950 0    50   Input ~ 0
-SCL
-Text GLabel 1100 4250 0    50   Input ~ 0
-BOOT0
-$Comp
-L power:GND #PWR0105
-U 1 1 5E218BA3
-P 1500 4450
-F 0 "#PWR0105" H 1500 4200 50  0001 C CNN
-F 1 "GND" H 1505 4277 50  0000 C CNN
-F 2 "" H 1500 4450 50  0001 C CNN
-F 3 "" H 1500 4450 50  0001 C CNN
-	1    1500 4450
-	1    0    0    -1  
-$EndComp
-Text GLabel 2300 3250 2    50   Input ~ 0
-Button_Up
-Text GLabel 2300 3550 2    50   Input ~ 0
-Button_Down
-Text GLabel 2300 3450 2    50   Input ~ 0
-Button_Left
-Text GLabel 2300 3350 2    50   Input ~ 0
-Button_Right
-$Comp
 L power:+3V3 #PWR0106
 U 1 1 5E21BBF3
 P 3700 950
@@ -303,10 +178,6 @@ F 3 "~" H 1050 1100 50  0001 C CNN
 	1    900  1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 2300 4050 2    50   Input ~ 0
-D+
-Text GLabel 2300 3950 2    50   Input ~ 0
-D-
 Text GLabel 1200 1150 2    50   Input ~ 0
 D+
 Text GLabel 1200 1250 2    50   Input ~ 0
@@ -520,21 +391,6 @@ F 3 "~" H 3500 2450 50  0001 C CNN
 	1    3500 2450
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5E21973F
-P 3200 2550
-F 0 "#PWR0115" H 3200 2300 50  0001 C CNN
-F 1 "GND" H 3205 2377 50  0000 C CNN
-F 2 "" H 3200 2550 50  0001 C CNN
-F 3 "" H 3200 2550 50  0001 C CNN
-	1    3200 2550
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 2550 3200 2450
-Wire Wire Line
-	3200 2450 3300 2450
 Wire Wire Line
 	3900 2450 3800 2450
 Wire Wire Line
@@ -603,10 +459,6 @@ F 3 "~" H 6150 1350 50  0001 C CNN
 	1    6150 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 2300 4150 2    50   Input ~ 0
-SWDIO
-Text GLabel 2300 4250 2    50   Input ~ 0
-SWDCLK
 Text GLabel 5600 1250 0    50   Input ~ 0
 SWDIO
 Text GLabel 5600 1350 0    50   Input ~ 0
@@ -658,91 +510,13 @@ F 3 "~" H 4150 1200 50  0001 C CNN
 	1    4150 1200
 	1    0    0    1   
 $EndComp
-Text GLabel 1950 5250 0    50   Input ~ 0
-Kill_Switch
-$Comp
-L power:GND #PWR0120
-U 1 1 5E225054
-P 2650 5350
-F 0 "#PWR0120" H 2650 5100 50  0001 C CNN
-F 1 "GND" H 2655 5177 50  0000 C CNN
-F 2 "" H 2650 5350 50  0001 C CNN
-F 3 "" H 2650 5350 50  0001 C CNN
-	1    2650 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 5350 2650 5250
-Wire Wire Line
-	2650 5250 2550 5250
-Wire Wire Line
-	2150 5250 1950 5250
-Text GLabel 2300 3650 2    50   Input ~ 0
-Kill_Switch
-$Comp
-L 74xGxx:74LVC1G17 U3
-U 1 1 5E22767C
-P 1800 6300
-F 0 "U3" H 1775 6567 50  0000 C CNN
-F 1 "74LVC1G17" H 1775 6476 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1800 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1800 6300 50  0001 C CNN
-F 4 "C124293" H 1800 6300 50  0001 C CNN "LCSC"
-	1    1800 6300
-	1    0    0    -1  
-$EndComp
-Text GLabel 2150 5950 1    50   Input ~ 0
-VBUS
-$Comp
-L LED:WS2812B D1
-U 1 1 5E22982F
-P 2500 6300
-F 0 "D1" H 2844 6346 50  0000 L CNN
-F 1 "WS2812B" H 2844 6255 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2550 6000 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2600 5925 50  0001 L TNN
-	1    2500 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 6000 2500 5950
-Wire Wire Line
-	2500 5950 1800 5950
-Wire Wire Line
-	1800 5950 1800 6200
-Wire Wire Line
-	1800 6400 1800 6650
-Wire Wire Line
-	1800 6650 2150 6650
-Wire Wire Line
-	2500 6650 2500 6600
-Wire Wire Line
-	2200 6300 2050 6300
-$Comp
-L power:GND #PWR0121
-U 1 1 5E23384D
-P 2150 6650
-F 0 "#PWR0121" H 2150 6400 50  0001 C CNN
-F 1 "GND" H 2155 6477 50  0000 C CNN
-F 2 "" H 2150 6650 50  0001 C CNN
-F 3 "" H 2150 6650 50  0001 C CNN
-	1    2150 6650
-	1    0    0    -1  
-$EndComp
-Text GLabel 1500 6300 0    50   Input ~ 0
-NeoPixel
-Text GLabel 2300 3150 2    50   Input ~ 0
-NeoPixel
-Connection ~ 2150 6650
-Wire Wire Line
-	2150 6650 2500 6650
 $Comp
 L Device:Rotary_Encoder_Switch SW7
 U 1 1 5E23C835
 P 6250 3800
 F 0 "SW7" H 6250 4167 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 6250 4076 50  0000 C CNN
-F 2 "TRA_KiCad_Footprints:EN11 Encoder" H 6100 3960 50  0001 C CNN
+F 2 "TRA_KiCad_Footprints:EN11_Encoder" H 6100 3960 50  0001 C CNN
 F 3 "~" H 6250 4060 50  0001 C CNN
 	1    6250 3800
 	1    0    0    -1  
@@ -770,96 +544,72 @@ Wire Wire Line
 	6650 3900 6550 3900
 Wire Wire Line
 	5950 3800 5300 3800
-Wire Wire Line
-	5300 3800 5300 3700
-$Comp
-L power:+3V3 #PWR0123
-U 1 1 5E248221
-P 5300 3700
-F 0 "#PWR0123" H 5300 3550 50  0001 C CNN
-F 1 "+3V3" H 5315 3873 50  0000 C CNN
-F 2 "" H 5300 3700 50  0001 C CNN
-F 3 "" H 5300 3700 50  0001 C CNN
-	1    5300 3700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW6
-U 1 1 5E24B6BA
-P 2350 5250
-F 0 "SW6" H 2350 5485 50  0000 C CNN
-F 1 "SW_SPST" H 2350 5394 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2350 5250 50  0001 C CNN
-F 3 "~" H 2350 5250 50  0001 C CNN
-	1    2350 5250
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J5
 U 1 1 5E2B51F8
-P 4500 6000
-F 0 "J5" H 4550 6417 50  0000 C CNN
-F 1 "SWD Header" H 4550 6326 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4500 6000 50  0001 C CNN
-F 3 "~" H 4500 6000 50  0001 C CNN
-	1    4500 6000
+P 4500 7000
+F 0 "J5" H 4550 7417 50  0000 C CNN
+F 1 "SWD Header" H 4550 7326 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 4500 7000 50  0001 C CNN
+F 3 "~" H 4500 7000 50  0001 C CNN
+	1    4500 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 5900 4100 5900
+	4300 6900 4100 6900
 Wire Wire Line
-	4100 5900 4100 6000
+	4100 6900 4100 7000
 Wire Wire Line
-	4300 6000 4100 6000
-Connection ~ 4100 6000
+	4300 7000 4100 7000
+Connection ~ 4100 7000
 Wire Wire Line
-	4100 6000 4100 6200
+	4100 7000 4100 7200
 Wire Wire Line
-	4300 5800 4100 5800
+	4300 6800 4100 6800
 Wire Wire Line
-	4100 5800 4100 5650
+	4100 6800 4100 6650
 $Comp
 L power:GND #PWR0124
 U 1 1 5E2BBF7F
-P 4100 6200
-F 0 "#PWR0124" H 4100 5950 50  0001 C CNN
-F 1 "GND" H 4105 6027 50  0000 C CNN
-F 2 "" H 4100 6200 50  0001 C CNN
-F 3 "" H 4100 6200 50  0001 C CNN
-	1    4100 6200
+P 4100 7200
+F 0 "#PWR0124" H 4100 6950 50  0001 C CNN
+F 1 "GND" H 4105 7027 50  0000 C CNN
+F 2 "" H 4100 7200 50  0001 C CNN
+F 3 "" H 4100 7200 50  0001 C CNN
+	1    4100 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0125
 U 1 1 5E2BDDEA
-P 4100 5650
-F 0 "#PWR0125" H 4100 5500 50  0001 C CNN
-F 1 "+3V3" H 4115 5823 50  0000 C CNN
-F 2 "" H 4100 5650 50  0001 C CNN
-F 3 "" H 4100 5650 50  0001 C CNN
-	1    4100 5650
+P 4100 6650
+F 0 "#PWR0125" H 4100 6500 50  0001 C CNN
+F 1 "+3V3" H 4115 6823 50  0000 C CNN
+F 2 "" H 4100 6650 50  0001 C CNN
+F 3 "" H 4100 6650 50  0001 C CNN
+	1    4100 6650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 5800 2    50   Input ~ 0
+Text GLabel 4900 6800 2    50   Input ~ 0
 SWDIO
-Text GLabel 4900 5900 2    50   Input ~ 0
+Text GLabel 4900 6900 2    50   Input ~ 0
 SWDCLK
 Text GLabel 3900 2450 2    50   Input ~ 0
 ~Reset
 Text GLabel 5600 1450 0    50   Input ~ 0
 ~Reset
-Text GLabel 4900 6200 2    50   Input ~ 0
+Text GLabel 4900 7200 2    50   Input ~ 0
 ~Reset
 Wire Wire Line
-	4900 5800 4800 5800
+	4900 6800 4800 6800
 Wire Wire Line
-	4800 5900 4900 5900
+	4800 6900 4900 6900
 Wire Wire Line
-	4900 6200 4800 6200
-NoConn ~ 4800 6100
-NoConn ~ 4800 6000
-NoConn ~ 4300 6100
-NoConn ~ 4300 6200
+	4900 7200 4800 7200
+NoConn ~ 4800 7100
+NoConn ~ 4800 7000
+NoConn ~ 4300 7100
+NoConn ~ 4300 7200
 $Comp
 L power:+3V3 #PWR0126
 U 1 1 5E2ECBBA
@@ -905,4 +655,286 @@ Wire Wire Line
 	4750 1200 4600 1200
 Wire Wire Line
 	4600 1200 4600 1400
+$Comp
+L power:GND #PWR0123
+U 1 1 5E58C340
+P 5300 3900
+F 0 "#PWR0123" H 5300 3650 50  0001 C CNN
+F 1 "GND" H 5305 3727 50  0000 C CNN
+F 2 "" H 5300 3900 50  0001 C CNN
+F 3 "" H 5300 3900 50  0001 C CNN
+	1    5300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3900 5300 3800
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5E9260C7
+P 1750 2400
+F 0 "J7" H 1830 2392 50  0000 L CNN
+F 1 "USB_Header" H 1830 2301 50  0000 L CNN
+F 2 "TRA_KiCad_Footprints:01x04_unpopulated" H 1750 2400 50  0001 C CNN
+F 3 "~" H 1750 2400 50  0001 C CNN
+	1    1750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW6
+U 1 1 5E24B6BA
+P 4200 5350
+F 0 "SW6" H 4200 5585 50  0000 C CNN
+F 1 "SW_SPST" H 4200 5494 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4200 5350 50  0001 C CNN
+F 3 "~" H 4200 5350 50  0001 C CNN
+	1    4200 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7200 2200 7200
+Connection ~ 1850 7200
+Text GLabel 2250 4200 2    50   Input ~ 0
+NeoPixel
+Text GLabel 1200 6850 0    50   Input ~ 0
+NeoPixel
+$Comp
+L power:GND #PWR0121
+U 1 1 5E23384D
+P 1850 7200
+F 0 "#PWR0121" H 1850 6950 50  0001 C CNN
+F 1 "GND" H 1855 7027 50  0000 C CNN
+F 2 "" H 1850 7200 50  0001 C CNN
+F 3 "" H 1850 7200 50  0001 C CNN
+	1    1850 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6850 1750 6850
+Wire Wire Line
+	2200 7200 2200 7150
+Wire Wire Line
+	1500 7200 1850 7200
+Wire Wire Line
+	1500 6950 1500 7200
+Wire Wire Line
+	1500 6500 1500 6750
+Wire Wire Line
+	2200 6500 1500 6500
+Wire Wire Line
+	2200 6550 2200 6500
+$Comp
+L LED:WS2812B D1
+U 1 1 5E22982F
+P 2200 6850
+F 0 "D1" H 2544 6896 50  0000 L CNN
+F 1 "WS2812B" H 2544 6805 50  0000 L CNN
+F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2250 6550 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2300 6475 50  0001 L TNN
+	1    2200 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 6500 1    50   Input ~ 0
+VBUS
+$Comp
+L 74xGxx:74LVC1G17 U3
+U 1 1 5E22767C
+P 1500 6850
+F 0 "U3" H 1475 7117 50  0000 C CNN
+F 1 "74LVC1G17" H 1475 7026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1500 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1500 6850 50  0001 C CNN
+F 4 "C124293" H 1500 6850 50  0001 C CNN "LCSC"
+	1    1500 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 4700 2    50   Input ~ 0
+Kill_Switch
+Wire Wire Line
+	4000 5350 3800 5350
+Wire Wire Line
+	4500 5350 4400 5350
+Wire Wire Line
+	4500 5450 4500 5350
+$Comp
+L power:GND #PWR0120
+U 1 1 5E225054
+P 4500 5450
+F 0 "#PWR0120" H 4500 5200 50  0001 C CNN
+F 1 "GND" H 4505 5277 50  0000 C CNN
+F 2 "" H 4500 5450 50  0001 C CNN
+F 3 "" H 4500 5450 50  0001 C CNN
+	1    4500 5450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 5350 0    50   Input ~ 0
+Kill_Switch
+Text GLabel 2250 5300 2    50   Input ~ 0
+SWDCLK
+Text GLabel 2250 5200 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	3200 2450 3300 2450
+Wire Wire Line
+	3200 2550 3200 2450
+$Comp
+L power:GND #PWR0115
+U 1 1 5E21973F
+P 3200 2550
+F 0 "#PWR0115" H 3200 2300 50  0001 C CNN
+F 1 "GND" H 3205 2377 50  0000 C CNN
+F 2 "" H 3200 2550 50  0001 C CNN
+F 3 "" H 3200 2550 50  0001 C CNN
+	1    3200 2550
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2250 5000 2    50   Input ~ 0
+D-
+Text GLabel 2250 5100 2    50   Input ~ 0
+D+
+Text GLabel 2250 4400 2    50   Input ~ 0
+Button_Right
+Text GLabel 2250 4500 2    50   Input ~ 0
+Button_Left
+Text GLabel 2250 4600 2    50   Input ~ 0
+Button_Down
+Text GLabel 2250 4300 2    50   Input ~ 0
+Button_Up
+$Comp
+L power:GND #PWR0105
+U 1 1 5E218BA3
+P 1450 5500
+F 0 "#PWR0105" H 1450 5250 50  0001 C CNN
+F 1 "GND" H 1455 5327 50  0000 C CNN
+F 2 "" H 1450 5500 50  0001 C CNN
+F 3 "" H 1450 5500 50  0001 C CNN
+	1    1450 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 5300 0    50   Input ~ 0
+BOOT0
+Text GLabel 1050 5000 0    50   Input ~ 0
+SCL
+Text GLabel 1050 4900 0    50   Input ~ 0
+SDA
+Text GLabel 1050 4200 0    50   Input ~ 0
+~Reset
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5E217BBE
+P 1250 3350
+F 0 "#PWR0104" H 1250 3200 50  0001 C CNN
+F 1 "+3V3" H 1265 3523 50  0000 C CNN
+F 2 "" H 1250 3350 50  0001 C CNN
+F 3 "" H 1250 3350 50  0001 C CNN
+	1    1250 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E217BB8
+P 1250 3750
+F 0 "#PWR0103" H 1250 3500 50  0001 C CNN
+F 1 "GND" H 1255 3577 50  0000 C CNN
+F 2 "" H 1250 3750 50  0001 C CNN
+F 3 "" H 1250 3750 50  0001 C CNN
+	1    1250 3750
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1250 3400
+Wire Wire Line
+	1250 3400 1250 3350
+Wire Wire Line
+	1250 3400 1250 3450
+Wire Wire Line
+	1450 3400 1250 3400
+Wire Wire Line
+	1450 4000 1450 3400
+$Comp
+L Device:C C3
+U 1 1 5E217BAD
+P 1250 3600
+F 0 "C3" H 1136 3554 50  0000 R CNN
+F 1 "0.1uF" H 1136 3645 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1288 3450 50  0001 C CNN
+F 3 "~" H 1250 3600 50  0001 C CNN
+F 4 "C49678" H 1250 3600 50  0001 C CNN "LCSC"
+	1    1250 3600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E214E5E
+P 1750 3350
+F 0 "#PWR0102" H 1750 3200 50  0001 C CNN
+F 1 "+3V3" H 1765 3523 50  0000 C CNN
+F 2 "" H 1750 3350 50  0001 C CNN
+F 3 "" H 1750 3350 50  0001 C CNN
+	1    1750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E21452E
+P 1750 3750
+F 0 "#PWR0101" H 1750 3500 50  0001 C CNN
+F 1 "GND" H 1755 3577 50  0000 C CNN
+F 2 "" H 1750 3750 50  0001 C CNN
+F 3 "" H 1750 3750 50  0001 C CNN
+	1    1750 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1750 3400
+Wire Wire Line
+	1750 3400 1750 3350
+Wire Wire Line
+	1750 3400 1750 3450
+Wire Wire Line
+	1550 3400 1750 3400
+Wire Wire Line
+	1550 4000 1550 3400
+$Comp
+L Device:C C4
+U 1 1 5E212434
+P 1750 3600
+F 0 "C4" H 1865 3646 50  0000 L CNN
+F 1 "0.1uF" H 1865 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1788 3450 50  0001 C CNN
+F 3 "~" H 1750 3600 50  0001 C CNN
+F 4 "C49678" H 1750 3600 50  0001 C CNN "LCSC"
+	1    1750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F042F6Px U2
+U 1 1 5E2111EE
+P 1650 4700
+F 0 "U2" H 1850 3800 50  0000 C CNN
+F 1 "STM32F042F6Px" H 1850 3950 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 1150 4000 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 1650 4700 50  0001 C CNN
+F 4 "C81000" H 1650 4700 50  0001 C CNN "LCSC"
+	1    1650 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 2500 0    50   Input ~ 0
+D+
+Text GLabel 1550 2400 0    50   Input ~ 0
+D-
+Text GLabel 1550 2300 0    50   Input ~ 0
+VBUS
+Wire Wire Line
+	1400 2600 1550 2600
+Wire Wire Line
+	1400 2650 1400 2600
+$Comp
+L power:GND #PWR0128
+U 1 1 5E94CBC7
+P 1400 2650
+F 0 "#PWR0128" H 1400 2400 50  0001 C CNN
+F 1 "GND" H 1405 2477 50  0000 C CNN
+F 2 "" H 1400 2650 50  0001 C CNN
+F 3 "" H 1400 2650 50  0001 C CNN
+	1    1400 2650
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
